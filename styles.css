@@ -23,7 +23,7 @@
     /* Grunn bilið okkar er 1rem == 16px */
     --spacing: 1rem;
     /* Hámarksbreidd á efni */
-    --max-width: 1200px;
+    --max-width: 1400px;
   
     --color-primary: #f0f0f8;
   
@@ -76,9 +76,9 @@
     max-width: var(--max-width);
   }
   
-  .info-boxes {
+  .info {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     gap: calc(var(--spacing) * 4);
   }
   
