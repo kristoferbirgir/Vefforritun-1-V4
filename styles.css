@@ -56,16 +56,30 @@
   }
   
   img {
-    max-width: 100%;
+    max-width: 100%;   
   }
   
   .button {
+    text-align: center;
     display: inline-block;
+    background-color: #ccc;
+    text-decoration: none;
+    color: #000;
+    font-size: 16px;
+    border: none
+    
+  }
+
+
   
     /* TODO útlit á button */
-  }
+  
   
   .button-secondary {
+    display: inline-block;
+    text-decoration: none;
+    background-color: white;
+
     /* TODO */
   }
   
@@ -80,12 +94,52 @@
     display: flex;
     flex-direction: row;
     gap: calc(var(--spacing) * 4);
+    align-items: center;
+    
+    
   }
+  .info2 {
+    display: flex;
+    flex-direction: row;
+    gap: calc(var(--spacing) * 4);
+    align-items: center;
+    flex-direction: row-reverse;
+    
+  }
+  
+  .cards {
+    display: flex;
+    flex-direction: row;
+    gap: calc(var(--spacing) * 4);
+  }
+  
   
   /* Header */
   
   header {
+    margin: 0 auto;
+    color: blue;
+    text-align: center;
   }
+  
+  footer {
+    background-color: #ccc;
+    margin-top: 1rem;
+    padding: 1rem 0;
+  
+  }
+
+  footer p {
+  max-width: 1600px;
+  text-align: center;
+  margin: 0 auto;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  
+  }
+  
+  
+
   
   /* TODO */
   
