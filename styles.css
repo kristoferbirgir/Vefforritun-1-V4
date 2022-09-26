@@ -57,7 +57,7 @@
   }
   
   img {
-    max-width: 100%;   
+    max-width: 60%;   
   }
   
   .button {
@@ -116,16 +116,17 @@
   
   
   /* Header */
-  
   .forsidumynd {
     margin: 0 auto;
-    color: blue;
+    color: #fff;
     text-align: center;
     background-image: url("myndir/header.jpg");
     width: 100%;
-    height: 400px;
+    max-height: auto;
+    border-image:fill;
+    height: 1000px;
     }
-  .texti
+ 
   
   
   footer {
