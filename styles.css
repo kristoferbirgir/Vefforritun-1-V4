@@ -50,6 +50,7 @@
     line-height: 1.5;
     font-family: var(--font-family-base);
   }
+
   
   h1, h2, h3 {
     font-family: var(--font-family-heading);
@@ -120,7 +121,9 @@
     margin: 0 auto;
     color: blue;
     text-align: center;
+    background-image: url("myndir/header.jpg");
   }
+  
   
   footer {
     background-color: #ccc;
