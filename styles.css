@@ -108,6 +108,10 @@ img {
 main {
   margin: 0 auto;
   max-width: var(--max-width);
+  margin-top: 4rem;
+  width:50%;
+  margin-left: 25% ;
+  margin-right: 25%;
 }
 
 .info {
@@ -115,6 +119,7 @@ main {
   flex-direction: row;
   gap: calc(var(--spacing) * 2);
   align-items: center;
+  
 
 }
 
@@ -220,13 +225,9 @@ footer p {
   margin: 0 auto;
   width: 100%;
   max-width: var(--max-width)
+  
 }
 
-main {
-  margin-top: 4rem;
-
-
-}
 .examples {
   margin-top: 4rem;
   margin-bottom: 2rem;
