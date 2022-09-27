@@ -31,7 +31,7 @@ html {
 
   --color-header: #fff;
   --color-text: #000;
-  --color-border: rgb(236, 236, 236);
+  --color-border: #ccc;
 
   /* Letur stillingar */
   --font-base-body-px: 16px;
@@ -71,10 +71,8 @@ img {
 
 .button {
   display: inline-block;
-  padding: 3px;
-  border-radius: 6px;
-  text-align: center;
   border: 1px solid var(--color-border);
+  text-align: center;
   text-decoration: none;
   color: #000;
   font-size: 16px;
@@ -87,6 +85,7 @@ img {
   display: flex;
   flex-direction: column;
   gap: calc(var(--spacing)*4);
+
 }
 
 
@@ -110,7 +109,6 @@ main {
   margin: 0 auto;
   max-width: var(--max-width);
   margin-top: 4rem;
-  width: 80%;
   
  margin: auto;
 }
@@ -120,6 +118,9 @@ main {
   flex-direction: row;
   gap: calc(var(--spacing) * 2);
   align-items: center;
+ 
+  
+
 }
 
 .info img {
@@ -135,16 +136,6 @@ main {
   align-items: center;
   
 
-}
-
-.loremImg {
-  width: 100%;
-  height: 300px;
-}
-
-#skewedImg {
-  width: 500px;
-  margin-top: 50px;
 }
 
 .info2 img {
@@ -164,32 +155,27 @@ main {
 }
 .card {
  display: flex;
- top: 0;
- flex-direction: column;
+ flex-direction: column-reverse;
  border-color: #000;
- width: 500px;
- border: 1px solid grey;
- border-radius: 6px;
   
 }
 
-.loremText {
-  margin: 10px;
-  height: 80%;
-}
-
-.loremBottom {
-  display: flex;
-  margin-top: auto;
-  margin: 0 10px 10px 10px;
-}
-
 /* Header */
+header {
+  display: flex;
+  flex-direction: row;
+  min-height: 100vh;
+  color: #ffffff;
+  background-color: skyblue;
+  background-position: 50% 50%;
+  background-attachment: fixed;
+  background-image: url("myndir/header.jpg");
+  position: relative;
+  background-repeat: no-repeat;
+}
 
 header .content {
   position: relative;
-  width: 100%;
-  height: 600px;
   z-index: 2;
   display: flex;
   flex-direction: column;
@@ -198,22 +184,6 @@ header .content {
   font-family: var(--font-family-heading);
   font-size: calc(var(--font-base-size)* 1.5);
   text-align: center;
-  margin-bottom: 100px;
-}
-
-.headerImg {
-  position: absolute;
-  width: 100%;
-  height: 600px;
-  z-index: -1;
-  left: 0;
-  top: 0;
-}
-
-.textWrapper {
-  text-align: center;
-  margin: auto;
-  color: white;
 }
 
 header .protection {
