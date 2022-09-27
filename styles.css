@@ -1,237 +1,250 @@
 /* Setjum inn „reset“ sem fjarlægir margin og padding af öllu */
 * {
-    margin: 0;
-    padding: 0;
-  }
-  
-  /* Reiknum stærð á öllum boxum sem border-box */
-  html {
-    box-sizing: border-box;
-  
-    /* Lætur skroll innan síðu taka tíma */
-    scroll-behavior: smooth;
-  }
-  
-  /* og látum erfast á allt */
-  *, *:before, *:after {
-    box-sizing: inherit;
-  }
-  
-  /* Breytur sem skal nota */
-  
-  :root {
-    /* Grunn bilið okkar er 1rem == 16px */
-    --spacing: 1rem;
-    /* Hámarksbreidd á efni */
-    --max-width: 1400px;
-  
-    --color-primary: #f0f0f8;
-  
-    --color-header: #fff;
-    --color-text: #000;
-    --color-border: #ccc;
-  
-    /* Letur stillingar */
-    --font-base-body-px: 16px;
-    --font-base-size: 1rem;
-    --font-family-base: 'Nunito', Helvetica, Arial, sans-serif;
-    --font-family-heading: 'Domine', Georgia, serif;
-  }
-  
-  /* Leturgerðir */
-  
-  /* TODO Setja upp leturgerðir */
-  
-  /* Almennt */
-  
-  body {
-    color: var(--color-text);
-    font-size: var(--font-base-body-px);
-    line-height: 1.5;
-    font-family: var(--font-family-base);
-  }
+  margin: 0;
+  padding: 0;
+}
 
-  
-  h1, h2, h3 {
-    font-family: var(--font-family-heading);
-  }
-  
-  img {
-  
-   height: 300px;
-    object-fit: cover;
-   
-  } 
-  
-  
-  
-  .button {
-    display: inline-block;
-    border: 1px solid var(--color-border);
-    text-align: center;
-    text-decoration: none;
-    color: #000;
-    font-size: 16px;
-    background-color: var(--color-border);
-    
-    
-  }
-  .wrapper {
-    display: flex;
-    flex-direction: column;
-    gap: calc(var(--spacing)*4);
-    
-  }
-  
-  
+/* Reiknum stærð á öllum boxum sem border-box */
+html {
+  box-sizing: border-box;
 
-  
-    /* TODO útlit á button */
-  
-  
-  .button-secondary {
-  
-    text-decoration: none;
-    background-color: white;
-    border: none;
+  /* Lætur skroll innan síðu taka tíma */
+  scroll-behavior: smooth;
+}
 
-    /* TODO */
-  }
-  
-  /* Layout */
-  
-  main {
-    margin: 0 auto;
-    max-width: var(--max-width);
-  }
-  
-  .info {
-    display: flex;
-    flex-direction: row;
-    gap: calc(var(--spacing) * 2);
-    align-items: center;
-    
-  }
+/* og látum erfast á allt */
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
 
-  .info img  {
-    transform:rotate(3deg);
-    
-  }
-  .info2  {
-    display: flex;
-    flex-direction: row-reverse;
-    gap: calc(var(--spacing) * 4);
-    align-items: center;
-    
-  }
-  .info2 img  {
+/* Breytur sem skal nota */
 
-    transform:rotate(-3deg);
-  }
-  
-  .cards {
+:root {
+  /* Grunn bilið okkar er 1rem == 16px */
+  --spacing: 1rem;
+  /* Hámarksbreidd á efni */
+  --max-width: 1400px;
+
+  --color-primary: #f0f0f8;
+
+  --color-header: #fff;
+  --color-text: #000;
+  --color-border: #ccc;
+
+  /* Letur stillingar */
+  --font-base-body-px: 16px;
+  --font-base-size: 1rem;
+  --font-family-base: 'Nunito', Helvetica, Arial, sans-serif;
+  --font-family-heading: 'Domine', Georgia, serif;
+}
+
+/* Leturgerðir */
+
+/* TODO Setja upp leturgerðir */
+
+/* Almennt */
+
+body {
+  color: var(--color-text);
+  font-size: var(--font-base-body-px);
+  line-height: 1.5;
+  font-family: var(--font-family-base);
+}
+
+
+h1,
+h2,
+h3 {
+  font-family: var(--font-family-heading);
+}
+
+img {
+
+  height: 300px;
+  object-fit: cover;
+
+}
+
+
+
+.button {
+  display: inline-block;
+  border: 1px solid var(--color-border);
+  text-align: center;
+  text-decoration: none;
+  color: #000;
+  font-size: 16px;
+  background-color: var(--color-border);
+
+
+}
+
+.wrapper {
   display: flex;
+  flex-direction: column;
+  gap: calc(var(--spacing)*4);
+
+}
+
+
+
+
+/* TODO útlit á button */
+
+
+.button-secondary {
+
+  text-decoration: none;
+  background-color: white;
+  border: none;
+
+  /* TODO */
+}
+
+/* Layout */
+
+main {
+  margin: 0 auto;
+  max-width: var(--max-width);
+}
+
+.info {
+  display: flex;
+  flex-direction: row;
+  gap: calc(var(--spacing) * 2);
+  align-items: center;
+
+}
+
+.info img {
+  transform: rotate(3deg);
+  
+
+}
+
+.info2 {
+  display: flex;
+  flex-direction: row-reverse;
   gap: calc(var(--spacing) * 4);
-  background-color: red;
+  align-items: center;
+  
+
+}
+
+.info2 img {
+
+  transform: rotate(-3deg);
+}
+
+.cards {
+ display: flex;
+ border-color: #000;
+ 
+ 
+  
+  gap: calc(var(--spacing) * 4);
   margin-bottom: 4rem;
   
-  }
+}
+.card {
+ display: flex;
+ flex-direction: column-reverse;
+ border-color: #000;
   
+}
 
-  .card  {
+/* Header */
+header {
   display: flex;
-  flex-direction: column-reverse;
-  gap: calc(var(--spacing) * 4);
-    
-  }
-  
-   
-  
-  
-  /* Header */
-  header {
-    display: flex;
-    flex-direction: row;
-    min-height: 100vh;
-    color: #ffffff;
-    background-color: skyblue;
-    background-position: 50% 50%;
-    background-attachment: fixed;
-    background-image: url("myndir/header.jpg");
-    position: relative;
-    background-repeat: no-repeat;
-    }
-    
-    header .content {
-     position: relative;
-     z-index: 2;
-     display: flex;
-     flex-direction: column;
-     gap: calc(var(--spacing)*2);
-     margin:auto;
-     font-family: var(--font-family-heading);
-     font-size: calc(var(--font-base-size)* 1.5);
-     text-align: center;
-      }
-      header .protection {
-        position: absolute;
-        top: 0;
-        right: 0;
-        bottom: 0;
-        left: 0;
-        z-index: 1;
-        background-color: rgba(0, 0, 0, 0.2) ;
-  
-      }
-      header h1 {
-      font-size: 4rem;
-  
-      }
-     
-   
-  
-  
-  footer {
-    background-color: #ccc;
-    margin-top: 1rem;
-    padding: 1rem 0;
-  
-  }
+  flex-direction: row;
+  min-height: 100vh;
+  color: #ffffff;
+  background-color: skyblue;
+  background-position: 50% 50%;
+  background-attachment: fixed;
+  background-image: url("myndir/header.jpg");
+  position: relative;
+  background-repeat: no-repeat;
+}
 
-  footer p {
+header .content {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  gap: calc(var(--spacing)*2);
+  margin: auto;
+  font-family: var(--font-family-heading);
+  font-size: calc(var(--font-base-size)* 1.5);
+  text-align: center;
+}
+
+header .protection {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 1;
+  background-color: rgba(0, 0, 0, 0.2);
+
+}
+
+header h1 {
+  font-size: 4rem;
+
+}
+
+
+
+
+footer {
+  background-color: #ccc;
+  margin-top: 1rem;
+  padding: 1rem 0;
+
+}
+
+footer p {
   max-width: 1600px;
   text-align: center;
   margin: 0 auto;
   padding-left: 2rem;
   padding-right: 2rem;
-  
-  }
-  
-  .wrapper {
-    margin: 0 auto;
-    width: 100%;
-    max-width: var(--max-width)
-    
-    }
-    main {
-      margin-top: 4rem;
-       
-        
-        }
-      
-  
-     
-      
-      
-  
 
-  
-  /* TODO */
-  
-  /* Upplýsingasvæði */
-  
-  /* TODO */
-  
-  /* Cards */
-  
-  /* TODO */
+}
+
+.wrapper {
+  margin: 0 auto;
+  width: 100%;
+  max-width: var(--max-width)
+}
+
+main {
+  margin-top: 4rem;
+
+
+}
+.examples {
+  margin-top: 4rem;
+  margin-bottom: 2rem;
+
+}
+
+
+
+
+
+
+
+/* TODO */
+
+/* Upplýsingasvæði */
+
+/* TODO */
+
+/* Cards */
+
+/* TODO */
