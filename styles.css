@@ -57,31 +57,43 @@
   }
   
   img {
-    max-width: 100%;  
-    object-fit: contain;
-    object-position: 50% 50%; 
-  }
+   max-width: 100%;
+   min-height: 100%; 
+    
+  
+  } 
+  
+  
   
   .button {
-    text-align: center;
     display: inline-block;
-    background-color: #ccc;
+    border: 1px solid var(--color-border);
+    text-align: center;
     text-decoration: none;
     color: #000;
     font-size: 16px;
-    border: none
+    background-color: var(--color-border);
+    
     
   }
-
+  .wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: calc(var(--spacing)*4);
+    
+  }
+  
+  
 
   
     /* TODO útlit á button */
   
   
   .button-secondary {
-    display: inline-block;
+  
     text-decoration: none;
     background-color: white;
+    border: none;
 
     /* TODO */
   }
@@ -96,55 +108,61 @@
   .info {
     display: flex;
     flex-direction: row;
-    gap: calc(var(--spacing) * 4);
+    gap: calc(var(--spacing) * 2);
     align-items: center;
     
   }
 
   .info img  {
-    transform:rotate(-3deg);
+    transform:rotate(3deg);
+    
   }
   .info2  {
     display: flex;
-    flex-direction: row;
+    flex-direction: row-reverse;
     gap: calc(var(--spacing) * 4);
     align-items: center;
-    flex-direction: row-reverse;
-    
     
   }
   .info2 img  {
 
-    transform:rotate(3deg);
+    transform:rotate(-3deg);
   }
   
   .cards {
-    display: flex;
-    flex-direction: row;
-    gap: calc(var(--spacing) * 4);
+  display: flex;
+  gap: calc(var(--spacing) * 4);
+  
   }
+  
+
   .card  {
-    display: flex;
-    flex-direction: row;
+  display: flex;
+  flex-direction: column-reverse;
+  background-color: pink;
+  
+  
+    
     gap: calc(var(--spacing) * 4);
-    align-items: center;
-    flex-direction: row-reverse;
     
   }
+  
+   
   
   
   /* Header */
   header {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     min-height: 100vh;
     color: #ffffff;
     background-color: skyblue;
     background-position: 50% 50%;
     background-attachment: fixed;
     background-image: url("myndir/header.jpg");
-
+    position: relative;
     }
+    
     header .content {
      position: relative;
      z-index: 2;
@@ -164,6 +182,10 @@
         left: 0;
         z-index: 1;
         background-color: rgba(0, 0, 0, 0.2) ;
+  
+      }
+      header h1 {
+      font-size: 4rem;
   
       }
      
