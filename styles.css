@@ -59,6 +59,9 @@
   img {
    max-width: 100%;
    min-height: 100%; 
+   width: 500x;
+   height: 500px;
+   
     
   
   } 
@@ -132,6 +135,8 @@
   .cards {
   display: flex;
   gap: calc(var(--spacing) * 4);
+  background-color: red;
+  margin-bottom: 4rem;
   
   }
   
@@ -139,11 +144,7 @@
   .card  {
   display: flex;
   flex-direction: column-reverse;
-  background-color: pink;
-  
-  
-    
-    gap: calc(var(--spacing) * 4);
+  gap: calc(var(--spacing) * 4);
     
   }
   
@@ -161,6 +162,7 @@
     background-attachment: fixed;
     background-image: url("myndir/header.jpg");
     position: relative;
+    background-repeat: no-repeat;
     }
     
     header .content {
@@ -211,11 +213,19 @@
   .wrapper {
     margin: 0 auto;
     width: 100%;
-    max-width: var(--max-width);
-
-   
+    max-width: var(--max-width)
     
     }
+    main {
+      margin-top: 4rem;
+       
+        
+        }
+      
+  
+     
+      
+      
   
 
   
