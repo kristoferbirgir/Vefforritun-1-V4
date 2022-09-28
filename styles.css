@@ -73,7 +73,7 @@ img {
   text-decoration: none;
   color: #000;
   font-size: 16px;
-  background-color: var(--color-border);
+  background-color: #eee;
 }
 
 .wrapper {
@@ -109,6 +109,7 @@ main {
   flex-direction: row;
   gap: calc(var(--spacing) * 2);
   align-items: center;
+  justify-content: space-between;
 }
 
 .info img {
@@ -196,7 +197,7 @@ header h1 {
 }
 
 footer {
-  background-color: #ccc;
+  background-color: #eee;
   margin-top: 1rem;
   padding: 1rem 0;
 }
