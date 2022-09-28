@@ -36,8 +36,8 @@ html {
   /* Letur stillingar */
   --font-base-body-px: 16px;
   --font-base-size: 1rem;
-  --font-family-base: 'Nunito', Helvetica, Arial, sans-serif;
-  --font-family-heading: 'Domine', Georgia, serif;
+  --font-family-base: "Nunito", Helvetica, Arial, sans-serif;
+  --font-family-heading: "Domine", Georgia, serif;
 }
 
 /* Leturgerðir */
@@ -53,7 +53,6 @@ body {
   font-family: var(--font-family-base);
 }
 
-
 h1,
 h2,
 h3 {
@@ -61,13 +60,9 @@ h3 {
 }
 
 img {
-
   height: 300px;
   object-fit: cover;
-
 }
-
-
 
 .button {
   display: inline-block;
@@ -79,30 +74,20 @@ img {
   color: #000;
   font-size: 16px;
   background-color: var(--color-border);
-
-
 }
 
 .wrapper {
   display: flex;
   flex-direction: column;
-  gap: calc(var(--spacing)*4);
+  gap: calc(var(--spacing) * 4);
   margin: 0 auto;
   width: 100%;
-  max-width: var(--max-width)
-
+  max-width: var(--max-width);
 }
-
-
-
-
-
 
 /* TODO útlit á button */
 
-
 .button-secondary {
-
   text-decoration: none;
   background-color: white;
   border: none;
@@ -117,8 +102,6 @@ main {
   max-width: var(--max-width);
   margin-top: 4rem;
   width: 80%;
-  
-
 }
 
 .info {
@@ -126,43 +109,33 @@ main {
   flex-direction: row;
   gap: calc(var(--spacing) * 2);
   align-items: center;
- 
-  
-
 }
 
 .info img {
   transform: rotate(3deg);
-  
 }
 .info .button {
-
-  margin-top: 2rem
+  margin-top: 2rem;
 }
 .info2 {
   display: flex;
   flex-direction: row-reverse;
   gap: calc(var(--spacing) * 4);
   align-items: center;
-  
-
 }
 
 .info2 img {
-
   transform: rotate(-3deg);
 }
 .info2 .button {
-
-  margin-top: 2rem
+  margin-top: 2rem;
 }
 
 .cards {
- display: flex;
- border-color: #000;
+  display: flex;
+  border-color: #000;
   gap: calc(var(--spacing) * 4);
   margin-bottom: 4rem;
-  
 }
 .card {
   display: flex;
@@ -172,9 +145,8 @@ main {
   width: 500px;
   border: 1px solid grey;
   border-radius: 6px;
-   
- }
- #skewedImg {
+}
+#skewedImg {
   width: 500px;
   margin-top: 50px;
 }
@@ -202,12 +174,11 @@ header .content {
   z-index: 2;
   display: flex;
   flex-direction: column;
-  gap: calc(var(--spacing)*2);
+  gap: calc(var(--spacing) * 2);
   margin: auto;
   font-family: var(--font-family-heading);
-  font-size: calc(var(--font-base-size)* 1.5);
+  font-size: calc(var(--font-base-size) * 1.5);
   text-align: center;
-  
 }
 
 header .protection {
@@ -218,22 +189,16 @@ header .protection {
   left: 0;
   z-index: 1;
   background-color: rgba(0, 0, 0, 0.2);
-
 }
 
 header h1 {
   font-size: 4rem;
-
 }
-
-
-
 
 footer {
   background-color: #ccc;
   margin-top: 1rem;
   padding: 1rem 0;
-
 }
 
 footer p {
@@ -242,37 +207,26 @@ footer p {
   margin: 0 auto;
   padding-left: 2rem;
   padding-right: 2rem;
-
 }
-
 
 .examples {
   margin-top: 4rem;
   margin-bottom: 2rem;
 }
-  .textWrapper {
-    text-align: center;
-    margin: auto;
-    color: white;
-   
-  }
-  .loremBottom {
-    display: flex;
-    margin-top: auto;
-    margin: 0 10px 10px 10px;
-  }
-  .loremText {
-    margin: 10px;
-    height: 80%;
-  }
-  
-
-  
-
-
-
-
-
+.textWrapper {
+  text-align: center;
+  margin: auto;
+  color: white;
+}
+.loremBottom {
+  display: flex;
+  margin-top: auto;
+  margin: 0 10px 10px 10px;
+}
+.loremText {
+  margin: 10px;
+  height: 80%;
+}
 
 /* TODO */
 
